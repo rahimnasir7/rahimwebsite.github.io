@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Alif Khattati</title>
+    <link rel="stylesheet" href="order1.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Painting Logo" class="logo">
+        </div>
+        <h1>Alif Khattati</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-section">
+            <h2>Order Now</h2>
+            <p>Want a beautiful art-piece? Fill the form below, and we'll deliver your favourite paintings right at your door step!</p>
+            <form action="submit_order.php" method="post" id="order-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Product">Select Your Favorite Product</label>
+                    <select id="Product" name="Product" required>
+                        <option value="" disabled selected>Choose a Product</option>
+                        <option value="The Garden of Light">The Garden of Light</option>
+                        <option value="Waves of Comfort">Waves of Comfort</option>
+                        <option value="Calm in His Assurance">Calm in His Assurance</option>
+                        <option value="Al-Asr">Al-Asr</option>
+                        <option value="Radiant relief">Radiant relief</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <A>2025 Alif Khattati - All rights are reserved</A>
+    </footer>
+    <script src="order.js"></script>
+</body>
+</html>
